@@ -3,7 +3,7 @@ import MapboxDirections
 
 // Will automatically read localized Instructions.plist
 let OSRMTextInstructionsStrings = NSDictionary(contentsOfFile: Bundle(for: OSRMInstructionFormatter.self).path(forResource: "Instructions", ofType: "plist")!)!
-
+//
 extension String {
     public var sentenceCased: String {
         return String(characters.prefix(1)).uppercased() + String(characters.dropFirst())
